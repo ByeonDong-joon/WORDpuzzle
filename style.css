@@ -1,0 +1,70 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #e0ebf5;
+}
+
+h1 {
+  font-size: 2.4em;
+  margin-top: 20px;
+}
+
+#setup {
+  margin: 30px;
+}
+
+.control-group {
+  margin: 10px 0;
+}
+
+label, select, button {
+  font-size: 1.5em;
+}
+
+select {
+  padding: 5px 10px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#gameWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+canvas {
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
+#wordList {
+  text-align: left;
+}
+
+#wordList ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+#wordList li.found {
+  text-decoration: line-through;
+  color: green;
+}
+
+#infoBar {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#restartBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}

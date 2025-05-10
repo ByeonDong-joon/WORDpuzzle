@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word Search Game - Ultimate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Word Search Puzzle</h1>
+  <div id="setup">
+    <div class="control-group">
+      <label for="sizeSelect">Choose grid size:</label><br>
+      <select id="sizeSelect">
+        <option value="8">8 × 8</option>
+        <option value="10">10 × 10</option>
+        <option value="12">12 × 12</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <button onclick="startGame()">Start Game</button>
+    </div>
+  </div>
+  <div id="gameArea" style="display: none;">
+    <div id="gameWrapper">
+      <canvas id="puzzleCanvas"></canvas>
+      <div id="wordList"><h3>Find these words:</h3><ul id="wordItems"></ul></div>
+    </div>
+    <div id="infoBar">
+      <span id="timer">⏱ Time: 0s</span>
+      <span id="score">✅ Score: 0</span>
+      <span id="lives">❤️❤️❤️</span>
+    </div>
+    <button id="restartBtn" style="display:none;" onclick="location.reload()">Play Again</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
